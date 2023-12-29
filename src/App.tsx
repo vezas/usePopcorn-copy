@@ -1,3 +1,10 @@
+import { Box, Layout } from 'lib/components/ui';
+
 export const App = () => {
-  return <></>;
+  return (
+    <Layout>
+      <Box />
+      <Box />
+    </Layout>
+  );
 };
