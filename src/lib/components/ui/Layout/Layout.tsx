@@ -4,12 +4,13 @@ import styles from './Layout.module.scss';
 
 interface LayoutProps {
   children: ReactNode;
+  handleQuery: (query: string) => void;
 }
 
-export const Layout: FC<LayoutProps> = ({ children }) => {
+export const Layout: FC<LayoutProps> = ({ children, handleQuery }) => {
   return (
     <>
-      <Header />
+      <Header handleQuery={handleQuery} />
       <main className={styles.main}>{children}</main>
     </>
   );
