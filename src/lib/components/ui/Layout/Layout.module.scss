@@ -1,6 +1,9 @@
 .main {
+  height: 100%;
   padding-inline: 2.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  grid-template-rows: min-content;
   gap: 3rem;
 }

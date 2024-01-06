@@ -6,6 +6,16 @@
   align-items: center;
   padding: 2.5rem;
   color: var(--color-text);
+  border-radius: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-background-100);
+  }
+
+  &:active {
+    background-color: var(--color-background-500);
+  }
 
   & > img {
     grid-area: 1 / 1 / span 2 / 1;

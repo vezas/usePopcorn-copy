@@ -36,10 +36,10 @@ html {
 }
 
 #root {
-  min-height: 100vh;
+  height: 100vh;
   padding: 2.5rem;
   background-color: var(--color-background-900);
   display: grid;
-  grid-template-rows: max-content 1fr;
+  grid-template-rows: auto 1fr;
   gap: 2.5rem;
 }

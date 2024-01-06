@@ -1,1 +1,1 @@
-export type { MovieList } from './movies';
+export type { MovieList, MovieDetail } from './movies';

@@ -1,0 +1,70 @@
+.movieDetail {
+  color: var(--color-text);
+
+  .top {
+    display: flex;
+    position: relative;
+
+    .backBtn {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 3rem;
+      aspect-ratio: 1;
+      box-shadow: 0 0 5rem rgba(0, 0, 0);
+    }
+
+    & > img {
+      display: block;
+      width: 33%;
+    }
+
+    .description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      padding-left: 3rem;
+
+      & > h3 {
+        font-size: 2rem;
+      }
+
+      & > p {
+        font-size: 1.2rem;
+      }
+
+      .info {
+        & > span {
+          display: inline-block;
+          padding-inline: 1rem;
+        }
+      }
+
+      .imdbRating {
+        & > span {
+          font-size: 1.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    padding: 3rem;
+    & > p {
+      font-style: italic;
+      font-size: 1.3rem;
+    }
+  }
+}
