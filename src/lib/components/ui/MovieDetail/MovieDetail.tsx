@@ -1,12 +1,15 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useFetchMovieDetail } from 'lib/hooks';
 import styles from './MovieDetail.module.scss';
+import { StarRating } from 'lib/components';
 
 interface MovieDetailProps {
   selectedMovieId: string;
 }
 
 export const MovieDetail: FC<MovieDetailProps> = ({ selectedMovieId }) => {
+  const [rate, setRate] = useState(0);
+
   const {
     movieDetail: {
       Title: title,
@@ -41,6 +44,7 @@ export const MovieDetail: FC<MovieDetailProps> = ({ selectedMovieId }) => {
         </div>
       </div>
       <div className={styles.bottom}>
+        <StarRating stars={10} rate={rate} setRate={setRate} />
         <p>{plot}</p>
         <p>{actors}</p>
         <p>{director}</p>
